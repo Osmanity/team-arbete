@@ -3,6 +3,7 @@ import "./index.css";
 import App from "./App.jsx";
 import { BrowserRouter, Route, Routes } from "react-router";
 import About from "./Pages/About.jsx";
+import Todos from "./Pages/Todos.jsx";
 
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
@@ -10,6 +11,7 @@ createRoot(document.getElementById("root")).render(
       <Route path="/" element={<App />} />
       <Route path="/home" element={<App />} />
       <Route path="/about" element={<About />} />
+      <Route path="/todos" element={<Todos />} />
     </Routes>
   </BrowserRouter>
 );
